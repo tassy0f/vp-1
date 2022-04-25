@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DialogService } from '../dialog-service';
-
 @Component({
   selector: 'app-cars',
   templateUrl: './cars.component.html',
@@ -10,148 +8,38 @@ export class CarsComponent implements OnInit {
 
   carName = ''
 
-  cars: {name:string, year:number, img:string}[] = [{
+  cars: {id:number, name:string, year:number, img:string}[] = [{
+    id: 1,
     name: 'Lexus',
     year: 2013,
     img: './assets/LFA.jpg'
   },
   {
+    id: 2,
     name: 'Audi',
     year: 2020,
     img: './assets/R8.jpg'
   },
   {
+    id: 3,
     name: 'Toyota',
     year: 2019,
     img: './assets/LandCruiser.jpg'
   },
   {
-    name: 'Audi',
+    id: 4,
+    name: 'Porcshe',
     year: 2020,
     img: './assets/404.jpg'
   },
   {
-    name: 'Audi',
-    year: 2020,
+    id: 5,
+    name: 'Dodge',
+    year: 2023,
     img: './assets/404.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/404.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/404.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/404.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  },
-  {
-    name: 'Audi',
-    year: 2020,
-    img: './assets/R8.jpg'
-  }]
+  },]
 
-  constructor(public readonly dialogService:DialogService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

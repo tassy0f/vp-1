@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DialogService } from 'src/app/dialog-service';
+import { CarComponent } from '../car/car.component';
 
 @Component({
   selector: 'app-cart-info',
@@ -8,14 +8,20 @@ import { DialogService } from 'src/app/dialog-service';
 })
 export class CartInfoComponent implements OnInit {
 
-  constructor(private dialogService:DialogService) { }
+  carNameOne:string = this.carComponent.carName;
+  carYearOne:number = this.carComponent.carYear;
+  carImgOne:string = this.carComponent.carImg;
 
+  constructor(public carComponent:CarComponent) { }
+
+  
   ngOnInit(): void {
+    
   }
 
 
   public onClickToCloseCarItems():void {
-    this.dialogService.isShowModalWindow = false
-    console.log(this.dialogService.isShowModalWindow);
+    this.carComponent.dialogService.isShowModalWindow = false
+    console.log(this.carComponent.dialogService.isShowModalWindow);
   }
 }
