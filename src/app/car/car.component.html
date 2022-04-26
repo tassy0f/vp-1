@@ -2,6 +2,7 @@
     <img src="{{carItem.img}}" alt="{{carItem.name}}">
     <p>Название: {{carItem.name}}</p>
     <p>Год: {{carItem.year}}</p>
-    <button (click)="onClickOnCarItem()"><app-cart-info *ngIf="dialogService.isShowModalWindow"></app-cart-info></button>
+    <button (click)="onClickOnCarItem()"></button>
+    <app-cart-info *ngIf="dialogService.isShowModalWindow"></app-cart-info>
 </div>
 
