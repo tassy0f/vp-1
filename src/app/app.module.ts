@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CarsComponent } from './cars/cars.component';
 import { CarComponent } from './car/car.component';
 import { CartInfoComponent } from './cart-info/cart-info.component';
+import { DialogService } from './dialog.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { CartInfoComponent } from './cart-info/cart-info.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DialogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

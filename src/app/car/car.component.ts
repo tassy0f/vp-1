@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DialogService } from '../dialog-service';
+import { DialogService } from '../dialog.service';
 
 @Component({
   selector: 'app-car',
